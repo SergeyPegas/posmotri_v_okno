@@ -13,7 +13,7 @@ html {
   block-size: 100%;
   margin: auto;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
 }
@@ -35,4 +35,367 @@ fieldset {
 ul,
 ol {
   list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin: 133px 30px;
+  max-width: 1140px;
+}
+
+/* Основное окно видео */
+.result {
+  margin-top: 78px;
+}
+
+.result__video-container {
+  position: relative;
+}
+
+.result__video {
+  width: 711px;
+  height: 386px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Форма поиска */
+.search-form {
+  display: flex;
+  justify-content: space-between;
+  max-height: 54px;
+}
+
+.search-form__fieldset {
+  border: none;
+}
+
+.search-form__fieldset-title {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.search-form__label {
+  display: flex;
+  align-items: center;
+  border: none;
+  width: fit-content;
+}
+
+.search-form__label:hover {
+  text-decoration: underline;
+}
+
+/* Input поиска */
+
+.search-form__textfield {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  border-right: none;
+  border-left: none;
+  background-color: transparent;
+  width: fit-content;
+  min-width: 225px;
+  appearance: none;
+  padding: 0;
+  font-family: inherit;
+  font-size: inherit;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.search-form__textfield:active {
+  border: 2px solid #fff;
+  border-radius: 2px;
+}
+
+.search-form__textfield::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.search-form__fieldset-title {
+  color: rgba(255, 255, 255);
+  font-family: inherit;
+  font-size: inherit;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* Текстовое поле */
+.search-form__textfield:active {
+  border-color: transparent;
+  outline: 1px solid white;
+}
+
+.search-form__textfield:focus {
+  outline: none;
+}
+
+.search-form__textfield:not(:active) {
+  outline: 1px solid white;
+  outline-offset: 1px;
+}
+
+/* Чекбоксы */
+.search-form__checkbox-list {
+  display: flex;
+  gap: 15px;
+}
+
+.search-form__label:has(:focus-visible) {
+  outline: 1px solid #fff;
+}
+
+.search-form__pseudo-checkbox {
+  width: 19px;
+  height: 19px;
+  border: 1px solid white;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.search-form__label-text {
+  text-align: center;
+  padding: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+
+/* ---------------------- */
+.search-form__checkbox-list .search-form__label {
+  cursor: pointer;
+}
+
+.search-form__label:hover .search-form__label-text {
+  border-bottom: 1px solid white;
+  margin-bottom: -1px;
+}
+
+.search-form__checkbox-list .search-form__label:has(:focus-visible) {
+  outline: 1px solid white;
+  outline-offset: 1px;
+}
+
+.search-form__checkbox-list .search-form__pseudo-checkbox:active {
+  border: 3px double #1b1919;
+  background-color: white;
+}
+
+input[type="checkbox"]:checked + span {
+  border: 1px double #1b1919;
+  background-color: white;
+}
+
+/* Кнопка */
+.button {
+  background-color: transparent;
+  color: #fff;
+  text-align: center;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border: 1px solid #fff;
+}
+
+.search-form__submit-button {
+  padding: 6px 73.5px;
+  margin-top: 20px;
+}
+
+.button:hover {
+  border: 1px solid #545050;
+  color: #545050;
+  cursor: pointer;
+}
+
+.button:active {
+  background-color: #545050;
+}
+
+/* Заголовок */
+.title {
+  font-family: Oswald, Impact, "Arial Narrow Bold", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 75px;
+  line-height: 94%;
+  text-transform: uppercase;
+}
+
+.content__details {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  width: 100%;
+}
+.content__accent {
+  color: #545050;
+  font-family: Oswald, Impact, "Arial Narrow Bold", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 75px;
+  line-height: 94%;
+  text-transform: uppercase;
+}
+
+.content__list {
+  position: relative;
+  max-height: 300px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.content__list::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ____Карточки___ */
+
+.content__video-card {
+  display: flex;
+  justify-content: space-between;
+  outline: 0;
+  box-shadow: none;
+  height: 107px;
+}
+
+.content__card-link {
+  display: block;
+  text-decoration: none;
+}
+
+.content__card-link:active {
+  background-color: #545050;
+}
+
+.content__card-link:hover .content__video-card-title {
+  text-decoration: underline white;
+}
+
+.content__card-link:hover .content__video-card-description {
+  text-decoration: underline white;
+}
+
+.content__card-link:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
+.content__card-link:focus-visible {
+  outline: 1px solid white;
+  outline-offset: -1px;
+}
+
+.content__card-link_current {
+  background-color: #545050;
+}
+
+/*_____ контент в карточках _____ */
+
+.content__video-card-thumbnail {
+  width: 194px;
+  height: 103px;
+  align-self: center;
+}
+
+.content__video-card-description-container {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 4px 0 0 2px;
+}
+
+.content__video-card-title {
+  color: #fff;
+  font-family: Oswald, Impact, "Arial Narrow Bold", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+
+.content__video-card-description {
+  color: #fff;
+  font-family: inherit;
+  font-size: inherit;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16.2px;
+}
+
+.button.more-button {
+  color: #fff;
+  text-align: center;
+  font-family: inherit;
+  font-size: inherit;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 6px 73.5px;
+  background-color: transparent;
+  border: 1px solid white;
+
+  width: 100%;
+
+  cursor: pointer;
+}
+
+/* _____Кнопощки____ */
+
+.button:hover {
+  text-decoration: underline white;
+}
+
+.button:active {
+  background-color: #545050;
+}
+
+.button:focus {
+  outline: none;
+}
+.button.search-form__submit-button:focus-visible {
+  outline: 1px solid white;
+  outline-offset: 1px;
+}
+
+.more-button:focus-visible {
+  outline: 1px solid white;
+  outline-offset: -3px;
 }
