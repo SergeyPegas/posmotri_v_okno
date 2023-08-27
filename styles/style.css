@@ -14,7 +14,7 @@ html {
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
-  color: #fff;
+  color: white;
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
@@ -93,7 +93,7 @@ ol {
 }
 
 .search-form__fieldset-title {
-  color: #fff;
+  color: white;
   font-family: inherit;
   font-size: inherit;
   font-style: normal;
@@ -138,14 +138,17 @@ ol {
   cursor: url("../images/cursor-text.svg") 3 10, auto;;
 }
 
-.search-form__textfield:active {
-  border-left: 1px solid white;
-  border-right: 1px solid white;
+.search-form__textfield:focus {
+  outline: none;
 }
 
-.search-form__label:focus .search-form__textfield:not(:active) {
+.search-form__label:has(:focus-visible) {
   outline: 1px solid white;
   outline-offset: 1px;
+}
+
+.search-form__textfield:active {
+  border-radius: none;
 }
 
 /* Блок чекбокса */
@@ -157,7 +160,7 @@ ol {
 }
 
 .search-form__fieldset-title {
-  color: #fff;
+  color: white;
   font-family: inherit;
   font-size: inherit;
   font-style: normal;
@@ -218,7 +221,7 @@ input[type="checkbox"]:checked + span {
 
 /* заголовок */
 .title {
-  color: #fff;
+  color: white;
   font-family: Oswald, Impact, "Arial Narrow Bold", sans-serif;
   font-size: 75px;
   font-style: normal;
@@ -308,7 +311,7 @@ input[type="checkbox"]:checked + span {
 }
 
 .content__video-card-title {
-  color: #fff;
+  color: white;
   font-family: Oswald, Impact, "Arial Narrow Bold", sans-serif;
   font-size: 30px;
   font-style: normal;
@@ -318,7 +321,7 @@ input[type="checkbox"]:checked + span {
 }
 
 .content__video-card-description {
-  color: #fff;
+  color: white;
   font-family: inherit;
   font-size: inherit;
   font-style: normal;
@@ -337,7 +340,7 @@ input[type="checkbox"]:checked + span {
 /* Buttons */
 /* Кнопка Найти */
 .search-form__submit-button {
-  color: #fff;
+  color: white;
   text-align: center;
   font-family: inherit;
   font-size: inherit;
@@ -351,7 +354,7 @@ input[type="checkbox"]:checked + span {
 }
 /* Кнопка Показать еще */
 .more-button {
-  color: #fff;
+  color: white;
   text-align: center;
   font-family: inherit;
   font-size: inherit;
