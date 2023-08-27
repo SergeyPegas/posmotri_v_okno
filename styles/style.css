@@ -231,7 +231,7 @@ input[type="checkbox"]:checked + span {
   font-size: 75px;
   font-style: normal;
   font-weight: 700;
-  line-height: 94%; /* 70.5px */
+  line-height: 94%;
   text-transform: uppercase;
 }
 
@@ -250,18 +250,6 @@ input[type="checkbox"]:checked + span {
 }
 
 /* Темплейт карточек */
-/* .cards-list-item-template{
-
-}
-
-.content__list-item {
-  display: flex;
-}
-.content__list-item:not(:last-child) {
-  margin-bottom: 30px;
-} */
-
-
 
 .content__video-card {
   display: flex;
@@ -270,10 +258,12 @@ input[type="checkbox"]:checked + span {
   box-shadow: none;
   height: 107px;
 }
+
 .content__card-link {
   display: block;
   text-decoration: none;
 }
+
 .content__card-link:active {
   background-color: #545050;
 }
@@ -283,11 +273,13 @@ input[type="checkbox"]:checked + span {
   cursor: url("../images/cursor.png") 1 1, auto;
 }
 
-.content__card-link:hover .content__video-card-title{
+.content__card-link:hover 
+.content__video-card-title{
   text-decoration: underline white;
 }
 
-.content__card-link:hover .content__video-card-description {
+.content__card-link:hover 
+.content__video-card-description {
   text-decoration: underline white;
 }
 
@@ -305,12 +297,14 @@ input[type="checkbox"]:checked + span {
 .content__card-link_current {
   background-color: #545050;
 }
+
 .content__video-card-description-container {
   display: flex;
   flex-direction: column;
   gap: 6px;
   padding: 4px 0 0 2px;
 }
+
 .content__video-card-title {
   color: #fff;
   font-family: Oswald, Impact, "Arial Narrow Bold", sans-serif;
@@ -320,6 +314,7 @@ input[type="checkbox"]:checked + span {
   line-height: 100%;
   text-transform: uppercase;
 }
+
 .content__video-card-description {
   color: #fff;
   font-family: inherit;
@@ -328,12 +323,12 @@ input[type="checkbox"]:checked + span {
   font-weight: 400;
   line-height: 16.2px;
 }
+
 .content__video-card-thumbnail {
   width: 194px;
   height: 103px;
   align-self: center;
 }
-
 
 /* Buttons */
 /* Кнопка Найти */
@@ -365,7 +360,6 @@ input[type="checkbox"]:checked + span {
   width: 100%;
 }
 
-
 /* эффекты */
 .button {
   cursor: url("../images/cursor.png") 1 1, auto;
@@ -387,10 +381,8 @@ input[type="checkbox"]:checked + span {
   outline: 1px solid white;
   outline-offset: 1px;
 }
+
 .more-button:focus-visible {
   outline: 1px solid white;
   outline-offset: -3px;
 }
-
-
-
